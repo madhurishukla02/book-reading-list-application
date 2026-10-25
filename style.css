@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #fce7f3);
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #6d28d9;
+    margin-bottom: 25px;
+}
+
+.book-container {
+    max-width: 650px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#bookInput {
+    padding: 12px;
+    width: 60%;
+    border: 2px solid #c4b5fd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#bookInput:focus {
+    border-color: #7c3aed;
+}
+
+#addBookBtn {
+    padding: 12px 18px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7c3aed;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#addBookBtn:hover {
+    background-color: #5b21b6;
+}
+
+#bookList {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+#bookList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #ede9fe, #fce7f3);
+    margin: 12px 0;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: left;
+    color: #374151;
+    font-weight: bold;
+}
+
+#bookList li div {
+    display: flex;
+    gap: 8px;
+}
+
+#bookList li button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+#bookList li button:first-child {
+    background-color: #10b981;
+}
+
+#bookList li button:first-child:hover {
+    background-color: #059669;
+}
+
+#bookList li button:last-child {
+    background-color: #ef4444;
+}
+
+#bookList li button:last-child:hover {
+    background-color: #dc2626;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .book-container {
+        padding: 20px;
+    }
+
+    #bookInput {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    #addBookBtn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #bookList li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #bookList li div {
+        display: flex;
+        gap: 8px;
+    }
+}
